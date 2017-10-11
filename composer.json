@@ -17,15 +17,11 @@
     "wondeltd/php-client": "1.4.*"
   },
   "require-dev": {
-    "guzzle/guzzle": "^3.7",
     "guzzlehttp/guzzle" : "^5.0|^6.0",
-    "kriswallsmith/buzz": "^0.10",
     "mockery/mockery": "^1.0",
     "phpunit/phpunit": "^6.1"
   },
   "suggest": {
-    "kriswallsmith/buzz": "Enables the buzz connector.",
-    "guzzle/guzzle": "Enables the guzzle connector.",
     "guzzlehttp/guzzle": "Enables the guzzlehttp connector."
   },
   "autoload": {
