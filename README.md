@@ -12,18 +12,22 @@ composer require a-lawrence/laravel-wonde
 
 Depending on your version of Laravel, it may be necessary to add your Service Provider to your `config/app.php` file:
 
-```
+```php
+
   ...
   ALawrence\LaravelWonde\WondeServiceProvider::class,
   ...
+  
 ```
 
 Along with the Alias:
 
-```
+```php
+
   ...
   'Wonde' => ALawrence\LaravelWonde\Facades\Wonde::class,
   ...
+  
 ```
 
 ## Usage
