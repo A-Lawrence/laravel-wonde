@@ -52,7 +52,7 @@ class WondeFactory
             throw new InvalidArgumentException('Wonde configuration token required.');
         }
 
-        return array_only($config, ['token']);
+        return array_only($config, ['token', 'school']);
     }
 
     /**
