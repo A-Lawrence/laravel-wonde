@@ -1,9 +1,20 @@
 <?php
 
+/*
+ * This file is part of Laravel Wonde.
+ *
+ * (c) Anthony Lawrence <artisan@anthonylawrence.me.uk>
+ *
+ * Based on the Laravel Manager package by Graham Campbell.
+ *
+ * For the full copyright and license information, please view the
+ * LICENSE file which was distributed with this source code.
+ */
+
 namespace ALawrence\LaravenWonde;
 
+use InvalidArgumentException;
 use Wonde\Client;
-use \InvalidArgumentException;
 
 /**
  * This is the main factory class for LaravelWonde.
@@ -38,7 +49,7 @@ class WondeFactory
     protected function getConfig(array $config)
     {
         if (!array_key_exists('token', $config)) {
-            throw new InvalidArgumentException("Your configuration data is invalid.  No authentication info.");
+            throw new InvalidArgumentException('Your configuration data is invalid.  No authentication info.');
         }
 
         return array_only($config, ['token']);
