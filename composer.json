@@ -17,12 +17,10 @@
     "wondeltd/php-client": "1.4.*"
   },
   "require-dev": {
-    "guzzlehttp/guzzle" : "^5.0|^6.0",
     "mockery/mockery": "^1.0",
     "phpunit/phpunit": "^6.1"
   },
   "suggest": {
-    "guzzlehttp/guzzle": "Enables the guzzlehttp connector."
   },
   "autoload": {
     "psr-4": {
