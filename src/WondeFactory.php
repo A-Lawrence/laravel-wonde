@@ -49,7 +49,7 @@ class WondeFactory
     protected function getConfig(array $config)
     {
         if (!array_key_exists('token', $config)) {
-            throw new InvalidArgumentException('Your configuration data is invalid.  No authentication info.');
+            throw new InvalidArgumentException('Wonde configuration token required.');
         }
 
         return array_only($config, ['token']);
