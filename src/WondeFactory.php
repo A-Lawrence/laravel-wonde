@@ -11,7 +11,7 @@
  * LICENSE file which was distributed with this source code.
  */
 
-namespace ALawrence\LaravenWonde;
+namespace ALawrence\LaravelWonde;
 
 use InvalidArgumentException;
 use Wonde\Client;
