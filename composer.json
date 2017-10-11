@@ -1,0 +1,46 @@
+{
+  "name": "A-Lawrence/laravel-wonde",
+  "description": "This is a bridge package for the Wonde API Client.",
+  "keywords": ["laravel", "framework", "wonde", "wonde ltd", "wondeltd", "laravel-wonde", "wonde laravel", "anthony lawrence", "alawrence", "anthonylawrence"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Anthony Lawrence",
+      "email": "artisan@anthonylawrence.me.uk"
+    }
+  ],
+  "require": {
+    "php": "^7.0",
+    "illuminate/contracts": "5.5.*",
+    "illuminate/support": "5.5.*",
+    "graham-campbell/manager": "^3.0",
+    "wondeltd/php-client": "1.4.*"
+  },
+  "require-dev": {
+    "guzzle/guzzle": "^3.7",
+    "guzzlehttp/guzzle" : "^5.0|^6.0",
+    "kriswallsmith/buzz": "^0.10",
+    "mockery/mockery": "^1.0",
+    "phpunit/phpunit": "^6.1"
+  },
+  "suggest": {
+    "kriswallsmith/buzz": "Enables the buzz connector.",
+    "guzzle/guzzle": "Enables the guzzle connector.",
+    "guzzlehttp/guzzle": "Enables the guzzlehttp connector."
+  },
+  "autoload": {
+    "psr-4": {
+      "ALawrence\\LaravelWonde\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "ALawrence\\Tests\\LaravelWonde\\": "tests/"
+    }
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
