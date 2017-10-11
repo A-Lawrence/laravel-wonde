@@ -78,4 +78,16 @@ class WondeManager extends AbstractManager
     {
         return $this->factory->make($config);
     }
+
+    /**
+     * Dynamically pass attributes to the main connection.
+     *
+     * @param string $attribute
+     *
+     * @return mixed
+     */
+    public function __get(string $attribute)
+    {
+        return $this->connection()->$attribute;
+    }
 }
