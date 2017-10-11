@@ -1,13 +1,23 @@
 <?php
 
+/*
+ * This file is part of Laravel Wonde.
+ *
+ * (c) Anthony Lawrence <artisan@anthonylawrence.me.uk>
+ *
+ * Based on the Laravel Manager package by Graham Campbell.
+ *
+ * For the full copyright and license information, please view the
+ * LICENSE file which was distributed with this source code.
+ */
 
 namespace ALawrence\LaravelWonde;
 
-use Wonde\Client as WondeClient;
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Foundation\Application as LaravelApplication;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Lumen\Application as LumenApplication;
+use Wonde\Client as WondeClient;
 
 /**
  * This is the main Wonde service provider class.
@@ -33,7 +43,7 @@ class WondeServiceProvider extends ServiceProvider
      */
     protected function setupConfig()
     {
-        $source = realpath(__DIR__ . '/../config/wonde.php');
+        $source = realpath(__DIR__.'/../config/wonde.php');
 
         if ($this->app instanceof LaravelApplication && $this->app->runningInConsole()) {
             $this->publishes([$source => config_path('wonde.php')]);
