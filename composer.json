@@ -1,7 +1,18 @@
 {
   "name": "a-lawrence/laravel-wonde",
   "description": "This is a bridge package for the Wonde API Client.",
-  "keywords": ["laravel", "framework", "wonde", "wonde ltd", "wondeltd", "laravel-wonde", "wonde laravel", "anthony lawrence", "alawrence", "anthonylawrence"],
+  "keywords": [
+    "laravel",
+    "framework",
+    "wonde",
+    "wonde ltd",
+    "wondeltd",
+    "laravel-wonde",
+    "wonde laravel",
+    "anthony lawrence",
+    "alawrence",
+    "anthonylawrence"
+  ],
   "license": "MIT",
   "authors": [
     {
@@ -35,6 +46,13 @@
   },
   "config": {
     "preferred-install": "dist"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "ALawrence\\LaravelWonde\\WondeServiceProvider"
+      ]
+    }
   },
   "minimum-stability": "dev",
   "prefer-stable": true
