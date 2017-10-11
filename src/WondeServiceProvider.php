@@ -43,7 +43,7 @@ class WondeServiceProvider extends ServiceProvider
      */
     protected function setupConfig()
     {
-        $source = realpath(__DIR__ . '/../config/wonde.php');
+        $source = realpath(__DIR__.'/../config/wonde.php');
 
         if ($this->app instanceof LaravelApplication && $this->app->runningInConsole()) {
             $this->publishes([$source => config_path('wonde.php')]);
