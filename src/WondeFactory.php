@@ -66,7 +66,7 @@ class WondeFactory
     {
         $client = new Client($auth['token']);
 
-        if(array_key_exists('school', $auth) && !empty($auth['school'])){
+        if (array_key_exists('school', $auth) && !empty($auth['school'])) {
             return $client->school($auth['school']);
         }
 
