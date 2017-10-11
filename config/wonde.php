@@ -41,6 +41,7 @@ return [
 
         'main' => [
             'token'  => env('wonde_token', null),
+            'school' => env('wonde_school', null), //Only required if a SINGLE school app.
         ],
 
     ],
