@@ -40,7 +40,7 @@ return [
     'connections' => [
 
         'main' => [
-            'token'  => env('wonder_token', null),
+            'token'  => env('wonde_token', null),
         ],
 
     ],
