@@ -60,10 +60,16 @@ class WondeFactory
      *
      * @param string[] $auth
      *
-     * @return \Wonde\Client
+     * @return \Wonde\Client|\Wonde\Endpoints\Schools
      */
     protected function getClient(array $auth)
     {
-        return new Client($auth['token']);
+        $client = new Client($auth['token']);
+
+        if(array_key_exists('school', $auth) && !empty($auth['school'])){
+            return $client->school($auth['school']);
+        }
+
+        return $client;
     }
 }
