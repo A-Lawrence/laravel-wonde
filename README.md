@@ -30,6 +30,25 @@ Along with the Alias:
   
 ```
 
+## Config
+
+Within your .env file (or environment variables) you can define the following two elements:
+
+```
+WONDE_TOKEN=Your-Access-Token
+WONDE_SCHOOL=Specific-School
+```
+
+_You will only need to set `WONDE_SCHOOL` if your application is a single school application._
+
+If you'd like more control over the configuration, you could always publish the config file for this package and modify as necessary:
+
+```php
+
+php artisan vendor:publish --provider="ALawrence\LaravelWonde\WondeServiceProvider"
+
+```
+
 ## Usage
 
 Basic usage can be carried out by utilising dependency injection within your controller:
